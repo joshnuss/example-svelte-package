@@ -49,7 +49,7 @@
     "url": "https://github.com/joshnuss/example-svelte-package.git"
   },
   "publishConfig": {
-    "access": "restricted"
+    "access": "public"
   },
   "release": {
     "branches": ["main", "next"]
