@@ -26,10 +26,13 @@ jobs:
         uses: pnpm/action-setup@v2
         with:
           version: 8
+
       - name: Install dependencies
-        run: pnpm clean-install
+        run: pnpm install
+
       - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
         run: pnpm audit signatures
+
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
