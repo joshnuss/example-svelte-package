@@ -51,9 +51,7 @@
   "publishConfig": {
     "access": "restricted"
   },
-  {
-    "release": {
-      "branches": ["main", "next"]
-    }
+  "release": {
+    "branches": ["main", "next"]
   }
 }
